@@ -1,72 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>BEA – Beta AI</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEA AI</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <!-- Boot screen -->
+  <div id="boot-screen">
+    <h1>Initializing BEA AI...</h1>
+  </div>
 
-<div id="particles-js"></div>
+  <!-- Main app container -->
+  <div id="app" class="hidden">
+    <!-- Sidebar for chat history -->
+    <aside id="sidebar">
+      <h2>Chat History</h2>
+      <div id="history"></div>
+    </aside>
 
-<!-- Boot Screen -->
+    <!-- Main chat area -->
+    <main id="main-chat">
+      <div id="chat-container"></div>
+      <div id="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </main>
+  </div>
 
-<div id="bootScreen">
+  <!-- Particle background -->
+  <canvas id="particles"></canvas>
 
-<div class="boot-content">
-
-<h1>BEA</h1>
-
-<div id="bootText"></div>
-
-</div>
-
-</div>
-
-<div class="app">
-
-<div class="sidebar">
-
-<h2>BEA</h2>
-
-<button onclick="newChat()">+ New Chat</button>
-
-<div id="history"></div>
-
-</div>
-
-<div class="container">
-
-<div class="header">
-BEA Beta AI
-</div>
-
-<div id="chat" class="chat"></div>
-
-<div class="input-area">
-
-<input id="input" placeholder="Ask BEA anything...">
-
-<button onclick="send()">Send</button>
-
-</div>
-
-</div>
-
-</div>
-
-<script src="js/script.js"></script>
-<script src="js/chat.js"></script>
-<script src="js/particles-config.js"></script>
-
+  <!-- Scripts -->
+  <script src="js/particles-config.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/chat.js"></script>
 </body>
 </html>
