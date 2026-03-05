@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEA AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Boot screen -->
+  <div id="boot-screen">
+    <h1>Initializing BEA AI...</h1>
+  </div>
+
+  <!-- Main app container -->
+  <div id="app" class="hidden">
+    <!-- Sidebar for chat history -->
+    <aside id="sidebar">
+      <h2>Chat History</h2>
+      <div id="history"></div>
+    </aside>
+
+    <!-- Main chat area -->
+    <main id="main-chat">
+      <div id="chat-container"></div>
+      <div id="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Particle background -->
+  <canvas id="particles"></canvas>
+
+  <!-- Scripts -->
+  <script src="js/particles-config.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
