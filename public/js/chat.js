@@ -56,7 +56,7 @@ async function sendMessage() {
   chatContainer.scrollTop = chatContainer.scrollHeight;
 
   try {
-    const response = await fetch("https://bea-ai.onrender.com/chat", {
+    const response = await fetch("https://bea-ai.onrender.com/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: text }),
